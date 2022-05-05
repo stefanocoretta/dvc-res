@@ -1,0 +1,27 @@
+---
+title: "Data version control for researchers"
+subtitle: "Edinburgh Open Research Conference"
+author: "Stefano Coretta"
+institute: "University of Edinburgh"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css:
+      - default
+      - libs/ipa-fonts.css
+      - libs/custom.css
+    nature:
+      highlightStyle: agate
+      highlightLanguage: r
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "libs/macros.js"
+fontsize: 14
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(xaringanExtra)
+```
+
