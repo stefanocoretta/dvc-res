@@ -25,3 +25,22 @@ options(htmltools.dir.version = FALSE)
 library(xaringanExtra)
 ```
 
+
+# Why should I learn version control?
+
+---
+
+![](img/folder-1.png)
+
+---
+
+![](img/folder-2.png)
+
+---
+
+![](img/folder-3.png)
+
+---
+
+![](img/folder-4.png)
+
