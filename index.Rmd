@@ -90,11 +90,27 @@ library(xaringanExtra)
 
 ---
 
-# What can it do for you?
+# The versioning system `git`
+
+- `git` is a very popular choice in **software development**.
+
+--
+
+- Tailored for tracking changes in software files.
+
+--
+
+- But, also useful with anything that is text-based (like analysis scripts, papers, dissertations, ...).
+
+---
+
+# What can `git` do for you?
 
 - Keep track of new or deleted files in a project.
 
 - Keep track of changes to individual files in a project.
+
+  - Done on a line-by-line basis.
 
 - Roll back to a previous version of the project or files.
 
@@ -107,3 +123,47 @@ library(xaringanExtra)
 ---
 
 # But what about data?
+
+- `git` is not great with non-text data.
+
+--
+
+- Non-text data have no "lines" so `git` tracks changes to the entire file (rather than portions of it).
+
+--
+
+- This is very inefficient.
+
+---
+
+# Enter `dvc`
+
+- `dvc` works on top of `git` to make data versioning easier and efficient.
+
+--
+
+- It has many features that can be used for many different purposes.
+
+--
+
+- You can use it as a back-up system as well!
+
+---
+
+# A complex project without `dvc`
+
+![](img/data-ver-complex.png)
+
+---
+
+# A complex project with `dvc`
+
+![](img/project-versions.png)
+
+---
+
+# Let's try it!
+
+---
+
+# Summary
