@@ -1,0 +1,47 @@
+---
+title: "Data Version Control for researchers"
+author: "Stefano Coretta"
+format: html
+editor: visual
+execute: 
+  eval: false
+engine: knitr
+---
+
+## Getting to know git
+
+Open your terminal and type the following command:
+
+```{bash}
+# I am a comment! You don't need to type me :)
+
+# The following commands create a new folder called "dvctest"
+# and navigates into that folder.
+
+mkdir dvctest
+cd dvctest
+```
+
+Now create a text file with your preferred text editor, write a short sentence and save the file in the `dvctest/` folder with the name `hello.txt`.
+
+------------------------------------------------------------------------
+
+Go back to your terminal and type:
+
+```{bash}
+ls
+```
+
+This will list the files in the current folder.
+
+---
+
+Now type the following command to initialise a git repository:
+
+```{bash}
+git init
+
+# Check it worked with git status
+git status
+```
+
