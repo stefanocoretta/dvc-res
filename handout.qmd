@@ -34,7 +34,7 @@ ls
 
 This will list the files in the current folder.
 
----
+------------------------------------------------------------------------
 
 Now type the following command to initialise a git repository:
 
@@ -43,5 +43,64 @@ git init
 
 # Check it worked with git status
 git status
+```
+
+------------------------------------------------------------------------
+
+Let's make out first commit.
+
+```{bash}
+# This stages all changes
+git add .
+
+# Let's check it worked
+git status
+
+# Now we can commit the changes
+git commit -m "my first commit"
+
+# and check
+git status
+```
+
+## Track changes with git
+
+Write a new line in `hello.txt` and save the file. Then check what changed in the file:
+
+```{bash}
+git status
+git diff hello.txt
+```
+
+And let's commit the changes:
+
+```{bash}
+git add hello.txt
+git commit -m "add text line"
+```
+
+You can check the history of commits like so:
+
+```{bash}
+git log
+```
+
+------------------------------------------------------------------------
+
+Now add another line in `hello.txt` and create a new file called `heya.txt`. Then:
+
+```{bash}
+git status
+
+# Let's add and commit only the changes in hello.txt
+git add hello.txt
+git commit -m "add another text line"
+
+git status
+
+git add heya.txt
+git commit -m "add new file"
+
+git log
 ```
 
