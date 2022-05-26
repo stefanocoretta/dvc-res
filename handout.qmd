@@ -104,3 +104,46 @@ git commit -m "add new file"
 git log
 ```
 
+## What about data?
+
+Initialise a dvc repository in your `dvctest/` folder.
+
+```{bash}
+dvc init
+
+dvc status
+# Looks familiar?
+```
+
+Now let's create a folder called `data` in our `dvctest/` folder and add two or three images of your choice (or anything else, like an audio file, a video, a database...).
+
+```{bash}
+# We are using the mkdir command to create a new folder but of course
+# you can just create one from the Finder/Explorer
+mkdir data
+
+# Now copy a few files into the data/ folder, then:
+
+git status
+```
+
+Let's start tracking the `data/` folder with dvc.
+
+```{bash}
+dvc add data
+# Again, does it look familiar?
+
+dvc status
+git status
+```
+
+What happened?
+
+---
+
+Let's stage and commit the `data.dvc` file.
+
+```{bash}
+git add .
+git commit -m "track data with dvc"
+```
